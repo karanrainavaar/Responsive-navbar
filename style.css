@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.top-area{
+    width:100%;
+    height:13vh;
+    color: #fff;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    user-select: none;
+    z-index: 10;
+    box-shadow: 8px 0 10px  #F7B733;
+    background: linear-gradient(120deg,#FC4A1A,#F7B733); 
+    opacity: 0.9;
+    position: fixed;
+}
+
+.nav-bar{
+    flex:1;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:2%;
+    user-select: none;
+}
+
+.nav-bar .icon-1{
+    font-size:1.7rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-bar .icon-2{
+    position: absolute;
+    left:89vw;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.6rem;
+}
+
+.nav-bar h2{
+    font-weight: 400;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+.nav-bar h2,input{
+    margin:1%;
+}
+
+.nav-bar input{
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 1.2vw;
+    border: none;
+    border-radius: 2vw;
+    padding: 0.6%;
+    line-height: 1.2vw;
+    text-align: center;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-size:2rem;
+}
+
+.logo img{
+    width:6vw;
+}
+@media(min-width:800px){
+    .nav-bar .icon-2{
+        display:none;
+    }
+    .main-area img{
+        width:47%;
+    }
+}
+@media(max-width:800px){
+    .categories2{
+        display: none;
+    }
+    .nav-bar h2{
+        display: none;
+    }
+    .nav-bar input{
+        display: none;
+    }
+    .logo h1 {
+        font-size:1.3rem
+    }
+    .logo img{
+        width:10vh;
+    }
+    .main-area{
+        flex-direction: column;
+    }
+    .main-area img{
+        width:80%;
+    }
+}
+
+
+.main-area{
+    overflow:auto;
+}
+
+.scroll-bar{
+    width:100%;
+    height: 22vh;
+    background: linear-gradient(120deg,#FC4A1A,#F7B733);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:-23vh;
+    z-index: 5;
+}
+
+.scroll-bar-items{
+    height:calc(22vh/3);
+    width:100%;
+    border: 1px 0px 1px 0px;
+    border-color: #fff;
+    border-style: solid;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-bar-items h3{
+    color: #fff;
+    font-weight: 400;
+    padding: 2vh;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+.scroll-bar input{
+    border:none;
+    width: 98%;
+    text-align: center;
+    line-height:5vh;
+}
+
+.scroll-down{
+    position: absolute;
+    top:13vh;
+    opacity: 1;
+}
+
+.categories{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    position: absolute;
+    top:7.8vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 6;
+    background: linear-gradient(120deg,#FC4A1A,#F7B733);
+    opacity: 0;
+}
+.categories2{
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 18vh;
+    position: absolute;
+    top:13vh;
+    left:28vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 6;
+    background: linear-gradient(120deg,#FC4A1A,#F7B733);
+    opacity: 0;
+}
+
+.catDiv2{
+    opacity:1;
+}
+
+.categories2 div{
+    height:6vh;
+    width: 100%;
+    user-select: none;
+}
+.categories div {
+    height:6vh;
+    width: 100%;
+    user-select: none;
+}
+
+.cat-items div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+}
+
+.cat-items div:hover{
+    border: 1.7px solid #fff; 
+} 
+
+.catDiv{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    position: absolute;
+    top:7.8vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 6;
+    background: linear-gradient(120deg,#FC4A1A,#F7B733);
+    opacity: 1;
+}
